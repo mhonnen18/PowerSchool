@@ -1,0 +1,48 @@
+<html>
+<link rel = "stylesheet" type = "text/css" href = "courses.gradeDetails">
+<head>
+  <title>Courses</title>
+</head>
+
+<body>
+
+<h1> PowerSchool </h1>
+<h2> Courses:</h2>
+
+<table>
+   <tr>
+      <th>Period</th><th>ClassName</th><th>Teacher</th><th>SemesterOne</th><th>SemesterTwo</th><th>Unexcused Tardies</th><th>Tardies</th><th>GradeDetails</th>
+   </tr>
+
+   <% for (var i = 0; i < courses.length; i++) { %>
+    <tr>
+      <td><%= courses[i].periodNumber %></td>
+      <td><%= courses[i].periodNumber %></td>
+      <td><%= courses[i].className %></td>
+      <td><%= courses[i].classTeacher %></td>
+      <td><%= courses[i].semesterOneGrade %></td>
+      <td><%= courses[i].semesterTwoGrade %></td>
+      <td><%= courses[i].unexcusedTardies %></td>
+      <td><%= courses[i].tardies %></td>
+      <td><a href="gradeDetails.html"><%= courses[i].gradeDetails %></a></td>
+
+    </tr>
+   <% } %>
+</table>
+
+</body>
+
+<style>
+body{
+  background-color: rgb(183, 237, 247);
+}
+h1{
+  text-align: center;
+  color: rgb(0, 0, 102);
+  font-size: 100px;
+  font-family: arial;
+  font-weight: 900;
+}
+</style>
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+<link rel = "stylesheet" type = "text/css" href = "gradeDetails.css">
+<head>
+  <title>GradeDetails</title>
+</head>
+
+<body>
+  <h1> These are your grades</h1>
+  <br>
+  <table>
+   <tr>
+      <th>dueDate</th><th>category</th><th>assignmentName</th><th>earnedPoints</th><th>possiblePoints</th><th>grade</th>
+   </tr>
+   <% for (var i = 0; i < gradeDetails.length;   i++) { %>
+    <tr>
+      <td><%= gradeDetails[i].dueDate %></td>
+      <td><%= gradeDetails[i].category %></td>
+      <td><%= gradeDetails[i].assignmentName %></td>
+      <td><%= gradeDetails[i].earnedPoints %></td>
+      <td><%= gradeDetails[i].possiblePoints %></td>
+      <td><%= gradeDetails[i].getGrade() %></td>
+    </tr>
+   <% } %>
+</table>
+</body>
+
+<style>
+body{
+  background-color: rgb(183, 237, 247);
+}
+h1{
+  text-align: center;
+  color: rgb(0, 0, 102);
+  font-size: 100px;
+  font-family: arial;
+  font-weight: 900;
+}
+</style>
+</html>
