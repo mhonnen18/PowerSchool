@@ -64,6 +64,11 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p>Genera sunt maxima quidem semper. Sine dubio esse scimus. Si tibi non opus est tibi ut powerschool extention tua.
 </p>
+<br>
+<center>
+<p2>This may have been one of the greatest classes of all time. Without a doubt, we know this to be true to this day. You don't need a powerschool extention to be great, if you make your own powerschool and be great as well.
+</p2></center>
+
 </body>
 
 <script>
@@ -72,12 +77,12 @@ function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById('main').style.display = "inline";
      document.getElementById("main").innerHTML = this.responseText;
-    }
+   }else{
+       document.getElementById('main').style.display = "inline";
+   }
   };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
+  xhttp.open("GET", "user", true);
 }
 </script>
 </html>
