@@ -1,4 +1,7 @@
-
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;

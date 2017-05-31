@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "ajax": "0.0.4",
     "auth0": "^2.6.0",
     "connect-redis": "^3.3.0",
     "ejs": "^2.5.6",
